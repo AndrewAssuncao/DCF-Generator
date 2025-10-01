@@ -1,0 +1,13 @@
+[tool.black]
+line-length = 100
+# Set this to your Python version; run `python -V` to confirm.
+target-version = ["py313"]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I", "UP", "B", "C90"]
+ignore = ["E203", "E266", "E501"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+pythonpath = ["."]
